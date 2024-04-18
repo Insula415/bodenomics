@@ -1,25 +1,23 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import LandingPage from './LandingPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <LandingPage></LandingPage>
+    // <div className="App">
+    //   {/* <div className="nav">
+    //     LOGO
+    //     <ul>
+    //       <li><a href="default.asp">Dex</a></li>
+    //       <li><a href="news.asp">Bird</a></li>
+    //       <li><a href="contact.asp">Telegram</a></li>
+    //       <li><a href="about.asp">Buy</a></li>
+    //       <li><a href="about.asp">Updates</a></li>
+    //     </ul>
+    //     </div> */}
+    // </div>
   );
 }
 
