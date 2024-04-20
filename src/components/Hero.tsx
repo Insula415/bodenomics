@@ -67,10 +67,13 @@ export default function Hero() {
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
-          pt: { xs: 14, sm: 20 },
-          pb: { xs: 8, sm: 12 },
+          pt: { xs: 14, sm: 15 },
+          pb: { xs: 1, sm: 1 },
         }}
       >
+        <div style={{ textAlign: 'center' }}>
+          <img src={require('../images/boden.png')} alt={"boden"} style={{ height: "180px", width: "150px", margin: "0 auto" }} />
+        </div>
         <Stack
           spacing={2}
           alignItems="center"
@@ -119,6 +122,21 @@ export default function Hero() {
             )}
           </Stack>
         </Stack>
+        <br />
+        <br />
+        <div style={{ textAlign: 'center' }}>
+          <img 
+            src={require('../images/banner.png')} 
+            alt={"boden"} 
+            style={{ 
+              height: "auto", 
+              maxWidth: "100%",
+              width: "100%", 
+              maxHeight: "250px",
+              margin: "0 auto" 
+            }} 
+          />
+        </div>
       </Container>
     </Box>
   );
