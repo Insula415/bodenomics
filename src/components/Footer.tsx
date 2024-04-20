@@ -55,7 +55,7 @@ export default function Footer() {
             minWidth: { xs: '100%', sm: '60%' },
           }}
         >
-          <Box sx={{ width: { xs: '100%', sm: '60%' } }}>
+          <Box sx={{ width: { xs: '100%'}, display: {xs: 'none', sm:'none', md: 'block', lg: 'block'} }}>
             <SitemarkIcon />
           </Box>
         </Box>

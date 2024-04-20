@@ -63,7 +63,7 @@ export default function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
               theme.palette.mode === 'light'
                 ? 'hsla(220, 60%, 99%, 0.6)'
                 : 'hsla(220, 0%, 0%, 0.7)',
-            backdropFilter: 'blur(24px)',
+          backdropFilter: 'blur(24px)',
             maxHeight: 40,
             border: '1px solid',
             borderColor: 'divider',
@@ -74,7 +74,7 @@ export default function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
           })}
         >
           <Box
-            sx={{
+            sx= {{
               flexGrow: 1,
               display: 'flex',
               alignItems: 'center',
@@ -87,7 +87,6 @@ export default function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                 variant="text"
                 color="info"
                 size="small"
-                onClick={() => scrollToSection('features')}
               >
                 <Link color="text.secondary" variant="body2" href="https://dexscreener.com/solana/emwb2iygubq8jhlgrbmmf1ezvrvzqnl5h8tfb93bh9km">
                   Dex
@@ -97,7 +96,6 @@ export default function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                 variant="text"
                 color="info"
                 size="small"
-                onClick={() => scrollToSection('testimonials')}
               >
                 <Link color="text.secondary" variant="body2" href="https://birdeye.so/token/EhrS5zE4zsvDiRhw3joJkEi8MmAagHfr3udxtdxU6N9m?chain=solana">
                   Bird
@@ -107,7 +105,6 @@ export default function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                 variant="text"
                 color="info"
                 size="small"
-                onClick={() => scrollToSection('highlights')}
               >
                 <Link color="text.secondary" variant="body2" href="https://t.me/+gJ8u21BL3rViOThh">
                   Telegram
@@ -117,22 +114,12 @@ export default function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                 variant="text"
                 color="info"
                 size="small"
-                onClick={() => scrollToSection('pricing')}
               >
                 <Link color="text.secondary" variant="body2" href="https://jup.ag/swap/USDC-SOL">
                   Buy
                 </Link>
               </Button>
             </Box>
-          </Box>
-          <Box
-            sx={{
-              display: { xs: 'none', md: 'flex' },
-              gap: 0.5,
-              alignItems: 'center',
-            }}
-          >
-            <ToggleColorMode mode={mode} toggleColorMode={toggleColorMode} />
           </Box>
           <Box sx={{ display: { sm: 'flex', md: 'none' } }}>
             <IconButton aria-label="Menu button" onClick={toggleDrawer(true)}>
@@ -152,7 +139,7 @@ export default function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                     justifyContent: 'space-between',
                   }}
                 >
-                  <ToggleColorMode mode={mode} toggleColorMode={toggleColorMode} />
+
                   <IconButton onClick={toggleDrawer(false)}>
                     <CloseRoundedIcon />
                   </IconButton>
@@ -171,30 +158,6 @@ export default function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                 Buy
                 </MenuItem>
                 <MenuItem onClick={() => scrollToSection('faq')}>FAQ</MenuItem>
-                <MenuItem>
-                  <Button
-                    color="primary"
-                    variant="contained"
-                    component="a"
-                    href="/material-ui/getting-started/templates/sign-up/"
-                    target="_blank"
-                    fullWidth
-                  >
-                    Sign up
-                  </Button>
-                </MenuItem>
-                <MenuItem>
-                  <Button
-                    color="primary"
-                    variant="outlined"
-                    component="a"
-                    href="/material-ui/getting-started/templates/sign-in/"
-                    target="_blank"
-                    fullWidth
-                  >
-                    Sign in
-                  </Button>
-                </MenuItem>
               </Box>
             </Drawer>
           </Box>
