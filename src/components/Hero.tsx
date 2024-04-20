@@ -72,7 +72,7 @@ export default function Hero() {
         }}
       >
         <div style={{ textAlign: 'center' }}>
-          <img src={require('../images/boden.png')} alt={"boden"} style={{ height: "180px", width: "150px", margin: "0 auto" }} />
+          <img src={require('../images/boden_bull.png')} alt={"boden"} style={{ height: "250px", width: "300px", margin: "0 auto" }} />
         </div>
         <Stack
           spacing={2}

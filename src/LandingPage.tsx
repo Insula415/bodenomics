@@ -15,6 +15,7 @@ import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import getLPTheme from './getLPTheme';
+import Construction from './components/Construction';
 // import bannerImage from '/images/banner.png';
 
 // interface ToggleCustomThemeProps {
@@ -93,6 +94,8 @@ export default function LandingPage() {
         {/* <Features /> */}
         <Divider />
         <Testimonials />
+        <Divider />
+        <Construction />
         <Divider />
         <Highlights />
         <Divider />

@@ -49,6 +49,9 @@ export default function Testimonials() {
           textAlign: 'center',
         }}
       >
+        <div style={{ textAlign: 'center', marginBottom: "-10px"}}>
+          <img src={require('../images/crawl.png')} alt={"boden"} style={{ height: "150px", width: "350px", margin: "0 auto" }} />
+        </div>
         <Typography component="h2" variant="h4" color="text.primary" className="flashing" sx={{p: 2}}>
           How to buy
         </Typography>
