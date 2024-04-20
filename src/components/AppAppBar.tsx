@@ -88,7 +88,7 @@ export default function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                 color="info"
                 size="small"
               >
-                <Link color="text.secondary" variant="body2" href="https://dexscreener.com/solana/emwb2iygubq8jhlgrbmmf1ezvrvzqnl5h8tfb93bh9km">
+                <Link color="text.primary" variant="h6" href="https://dexscreener.com/solana/emwb2iygubq8jhlgrbmmf1ezvrvzqnl5h8tfb93bh9km">
                   Dex
                 </Link>
               </Button>
@@ -97,7 +97,7 @@ export default function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                 color="info"
                 size="small"
               >
-                <Link color="text.secondary" variant="body2" href="https://birdeye.so/token/EhrS5zE4zsvDiRhw3joJkEi8MmAagHfr3udxtdxU6N9m?chain=solana">
+                <Link color="text.primary" variant="h6" href="https://birdeye.so/token/EhrS5zE4zsvDiRhw3joJkEi8MmAagHfr3udxtdxU6N9m?chain=solana">
                   Bird
                 </Link>
               </Button>
@@ -106,7 +106,7 @@ export default function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                 color="info"
                 size="small"
               >
-                <Link color="text.secondary" variant="body2" href="https://t.me/+gJ8u21BL3rViOThh">
+                <Link color="text.primary" variant="h6" href="https://t.me/+gJ8u21BL3rViOThh">
                   Telegram
                 </Link>
               </Button>
@@ -115,7 +115,7 @@ export default function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                 color="info"
                 size="small"
               >
-                <Link color="text.secondary" variant="body2" href="https://jup.ag/swap/USDC-SOL">
+                <Link color="text.primary" variant="h6" href="https://jup.ag/swap/USDC-SOL">
                   Buy
                 </Link>
               </Button>
@@ -145,19 +145,26 @@ export default function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                   </IconButton>
                 </Box>
                 <Divider sx={{ my: 3 }} />
-                <MenuItem onClick={() => scrollToSection('features')}>
+                <MenuItem>
+                <Link color="text.primary" variant="h6" href="https://dexscreener.com/solana/emwb2iygubq8jhlgrbmmf1ezvrvzqnl5h8tfb93bh9km">
                   Dex
+                </Link>
                 </MenuItem>
-                <MenuItem onClick={() => scrollToSection('testimonials')}>
+                <MenuItem>
+                <Link color="text.primary" variant="h6" href="https://birdeye.so/token/EhrS5zE4zsvDiRhw3joJkEi8MmAagHfr3udxtdxU6N9m?chain=solana">
                   Bird
+                </Link>
                 </MenuItem>
-                <MenuItem onClick={() => scrollToSection('highlights')}>
+                <MenuItem>
+                <Link color="text.primary" variant="h6" href="https://t.me/+gJ8u21BL3rViOThh">
                   Telegram
+                </Link>
                 </MenuItem>
-                <MenuItem onClick={() => scrollToSection('pricing')}>
-                Buy
+                <MenuItem>
+                <Link color="text.primary" variant="h6" href="https://jup.ag/swap/USDC-SOL">
+                  Buy
+                </Link>
                 </MenuItem>
-                <MenuItem onClick={() => scrollToSection('faq')}>FAQ</MenuItem>
               </Box>
             </Drawer>
           </Box>

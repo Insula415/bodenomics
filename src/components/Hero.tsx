@@ -96,12 +96,12 @@ export default function Hero() {
             ))}
           </Typography>
           <Typography
-            variant="h4"
+            variant="h5"
             textAlign="center"
             color="text.primary"
             sx={{ width: { sm: '100%', md: '80%' } }}
           >
-            MAKES SOLANA GO UP
+            Vote Boden because more bad = good
           </Typography>
           <Stack
             direction={{ xs: 'column', sm: 'row' }}

@@ -60,6 +60,8 @@ export default function Meme() {
             </div>
           </Grid>
         </Grid>
+        <img src={require('../images/vid.gif')} alt="Image 3" style={{ width: '100%', height: 'auto'}} />
+        <img src={require('../images/roadmap.png')} alt="Image 3" style={{ width: '600px', height: 'auto'}} />
       </Container>
     </Box>
   );
