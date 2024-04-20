@@ -112,13 +112,13 @@ export default function Hero() {
             <InputLabel htmlFor="email-hero" sx={visuallyHidden}>
               Email
             </InputLabel>
-            <Typography id="email-hero">
+            <Typography id="email-hero" variant='h5'>
               EhrS5zE4zsvDiRhw3joJkEi8MmAagHfr3udxtdxU6N9m
             </Typography>
             {copied ? (
-              <DoneIcon style={{ fontSize: 20, margin: "0 auto"}} />
+              <DoneIcon style={{ fontSize: 25, margin: "0 auto"}} />
             ) : (
-              <ContentCopyIcon onClick={handleCopyText} style={{ fontSize: 20, cursor: 'pointer', margin: "0 auto" }} />
+              <ContentCopyIcon onClick={handleCopyText} style={{ fontSize: 25, cursor: 'pointer', margin: "0 auto" }} />
             )}
           </Stack>
         </Stack>

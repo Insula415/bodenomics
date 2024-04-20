@@ -57,23 +57,22 @@ export default function Testimonials() {
         </Typography>
         <br />
       </Box>
-      <Grid container spacing={2}>
-        {userTestimonials.map((testimonial,index) => (
+      <Grid container spacing={2} alignItems="stretch">
+        {userTestimonials.map((testimonial, index) => (
           <Grid item xs={12} sm={6} md={3} key={index}>
             <Card
               sx={{
                 display: 'flex',
                 flexDirection: 'column',
-                justifyContent: 'space-between',
-                flexGrow: 1,
-                p: 1,
+                height: '100%',
+                p: 1
               }}
             >
-              <CardContent>
+              <CardContent sx={{ flexGrow: 1 }}>
                 <Typography variant="h5" color="text.primary" sx={{pb: 2}}>
                   {testimonial.name}
                 </Typography>
-                <Typography color="text" sx={{fontSize: {xs: 12, sm: 15}}}>
+                <Typography color="text" sx={{ fontSize: { xs: 12, sm: 15 } }}>
                   {testimonial.testimonial}
                 </Typography>
               </CardContent>

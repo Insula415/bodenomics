@@ -5,12 +5,6 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-import AutoFixHighRoundedIcon from '@mui/icons-material/AutoFixHighRounded';
-import ConstructionRoundedIcon from '@mui/icons-material/ConstructionRounded';
-import QueryStatsRoundedIcon from '@mui/icons-material/QueryStatsRounded';
-import SettingsSuggestRoundedIcon from '@mui/icons-material/SettingsSuggestRounded';
-import SupportAgentRoundedIcon from '@mui/icons-material/SupportAgentRounded';
-import ThumbUpAltRoundedIcon from '@mui/icons-material/ThumbUpAltRounded';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import XIcon from '@mui/icons-material/X';
 import Link from '@mui/material/Link';
@@ -45,21 +39,14 @@ export default function Highlights() {
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
-          textAlign: 'center', // Center align the content
+          textAlign: 'center',
           gap: { xs: 3, sm: 6 },
         }}
       >
-        <Box
-          sx={{
-            width: { sm: '100%', md: '60%' },
-            textAlign: 'center',
-          }}
-        >
-          <Typography component="h2" variant="h4" className="flashing" sx={{p: 2}}>
-            Socials
-          </Typography>
-        </Box>
-        <Grid container spacing={2.5}>
+        <Typography component="h2" variant="h4" className="flashing" sx={{p: 2, width: '100%'}}>
+          Socials
+        </Typography>
+        <Grid container spacing={2.5} justifyContent="center">
           {items.map((item, index) => (
             <Grid item xs={12} sm={6} md={4} key={index}>
               <Stack
@@ -67,24 +54,21 @@ export default function Highlights() {
                 color="inherit"
                 component={Card}
                 spacing={1}
-                useFlexGap
                 sx={{
                   p: 3,
                   height: '100%',
                   border: '1px solid',
                   borderColor: 'hsla(220, 25%, 25%, .3)',
                   background: 'transparent',
-                  backgroundColor: 'grey.900',
+                  backgroundColor: 'blue',
                   boxShadow: 'none',
                 }}
               >
-                <Link color="text.secondary" variant="body2" href={item.link}>
-                  <Box sx={{ opacity: '50%' }}>{item.icon}</Box>
-                  <div>
-                    <Typography fontWeight="medium" gutterBottom>
-                      {item.title}
-                    </Typography>
-                  </div>
+                <Link color="text.primary" variant="body2" href={item.link} sx={{ textDecoration: 'none', fontWeight: "600" }}>
+                  <Box sx={{ opacity: 0.5, mb: 1 }}>{item.icon}</Box>
+                  <Typography fontWeight="600" variant="h6" gutterBottom>
+                    {item.title}
+                  </Typography>
                 </Link>
               </Stack>
             </Grid>
