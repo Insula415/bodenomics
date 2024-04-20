@@ -54,7 +54,7 @@ export default function Testimonials() {
           textAlign: 'center',
         }}
       >
-        <Typography component="h2" variant="h4" color="text.primary" className="flashing">
+        <Typography component="h2" variant="h4" color="text.primary" className="flashing" sx={{p: 2}}>
           How to buy
         </Typography>
         <br />

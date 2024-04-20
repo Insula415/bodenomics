@@ -81,7 +81,7 @@ export default function Hero() {
             variant="h1"
             sx={{
               display: 'flex',
-              flexDirection: { xs: 'column', sm: 'row' },
+              flexDirection: { xs: 'row', sm: 'row' },
               alignItems: 'center',
               fontSize: 'clamp(3rem, 10vw, 3.5rem)',
             }}
@@ -113,9 +113,9 @@ export default function Hero() {
               EhrS5zE4zsvDiRhw3joJkEi8MmAagHfr3udxtdxU6N9m
             </Typography>
             {copied ? (
-              <DoneIcon style={{ fontSize: 20 }} />
+              <DoneIcon style={{ fontSize: 20, margin: "0 auto"}} />
             ) : (
-              <ContentCopyIcon onClick={handleCopyText} style={{ fontSize: 20, cursor: 'pointer' }} />
+              <ContentCopyIcon onClick={handleCopyText} style={{ fontSize: 20, cursor: 'pointer', margin: "0 auto" }} />
             )}
           </Stack>
         </Stack>

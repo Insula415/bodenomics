@@ -55,7 +55,7 @@ export default function Highlights() {
             textAlign: 'center',
           }}
         >
-          <Typography component="h2" variant="h4" className="flashing">
+          <Typography component="h2" variant="h4" className="flashing" sx={{p: 2}}>
             Socials
           </Typography>
         </Box>
