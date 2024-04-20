@@ -11,33 +11,7 @@ import Typography from '@mui/material/Typography';
 import { visuallyHidden } from '@mui/utils';
 import { styled } from '@mui/material/styles';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
-
-// const StyledBox = styled('div')(({ theme }) => ({
-//   alignSelf: 'center',
-//   width: '100%',
-//   height: 400,
-//   marginTop: theme.spacing(8),
-//   borderRadius: theme.shape.borderRadius,
-//   boxShadow:
-//     theme.palette.mode === 'light'
-//       ? '0 0 12px 8px hsla(220, 25%, 80%, 0.2)'
-//       : '0 0 24px 12px hsla(210, 100%, 25%, 0.2)',
-//   outline: '1px solid',
-//   backgroundImage: `url(${
-//     theme.palette.mode === 'light'
-//       ? '/static/images/templates/templates-images/hero-light.png'
-//       : '/static/images/templates/templates-images/hero-dark.png'
-//   })`,
-//   backgroundSize: 'cover',
-//   outlineColor:
-//     theme.palette.mode === 'light'
-//       ? 'hsla(220, 25%, 80%, 0.5)'
-//       : 'hsla(210, 100%, 80%, 0.1)',
-//   [theme.breakpoints.up('sm')]: {
-//     marginTop: theme.spacing(10),
-//     height: 700,
-//   },
-// }));
+import DoneIcon from '@mui/icons-material/Done';
 
 const colors = [
   '#FF5733', '#33FF57', '#5733FF', '#FF5733', '#33FF57', '#5733FF', 
@@ -47,9 +21,10 @@ const colors = [
   '#32CD32', '#FFD700', '#00FF7F', '#FF69B4', '#ADFF2F', '#4682B4'
 ];
 
-
 export default function Hero() {
   const [currentColorIndex, setCurrentColorIndex] = useState(0);
+  const [copied, setCopied] = useState(false);
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentColorIndex((prevIndex) => (prevIndex + 1) % colors.length);
@@ -57,6 +32,24 @@ export default function Hero() {
 
     return () => clearInterval(interval);
   }, []);
+
+  const handleCopyText = () => {
+    const emailElement = document.getElementById('email-hero');
+    if (emailElement) {
+      const textToCopy = emailElement.innerText;
+      navigator.clipboard.writeText(textToCopy)
+        .then(() => {
+          setCopied(true);
+          setTimeout(() => {
+            setCopied(false);
+          }, 1000); // Change back to copy icon after 1 second
+        })
+        .catch((error) => {
+          console.error('Error copying text: ', error);
+        });
+    }
+  };
+
   return (
     <Box
       id="hero"
@@ -116,13 +109,17 @@ export default function Hero() {
             <InputLabel htmlFor="email-hero" sx={visuallyHidden}>
               Email
             </InputLabel>
-            EhrS5zE4zsvDiRhw3joJkEi8MmAagHfr3udxtdxU6N9m
-            <ContentCopyIcon style={{ fontSize: 20 }} />
+            <Typography id="email-hero">
+              EhrS5zE4zsvDiRhw3joJkEi8MmAagHfr3udxtdxU6N9m
+            </Typography>
+            {copied ? (
+              <DoneIcon style={{ fontSize: 20 }} />
+            ) : (
+              <ContentCopyIcon onClick={handleCopyText} style={{ fontSize: 20, cursor: 'pointer' }} />
+            )}
           </Stack>
         </Stack>
-        {/* <StyledBox id="image" /> */}
       </Container>
     </Box>
-
   );
 }

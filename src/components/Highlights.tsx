@@ -11,44 +11,21 @@ import QueryStatsRoundedIcon from '@mui/icons-material/QueryStatsRounded';
 import SettingsSuggestRoundedIcon from '@mui/icons-material/SettingsSuggestRounded';
 import SupportAgentRoundedIcon from '@mui/icons-material/SupportAgentRounded';
 import ThumbUpAltRoundedIcon from '@mui/icons-material/ThumbUpAltRounded';
+import TelegramIcon from '@mui/icons-material/Telegram';
+import XIcon from '@mui/icons-material/X';
+import Link from '@mui/material/Link';
 
 const items = [
   {
-    icon: <SettingsSuggestRoundedIcon />,
-    title: 'Adaptable performance',
-    description:
-      'Our product effortlessly adjusts to your needs, boosting efficiency and simplifying your tasks.',
+    icon: <TelegramIcon />,
+    title: 'Telegram',
+    link: "https://t.me/+gJ8u21BL3rViOThh"
   },
   {
-    icon: <ConstructionRoundedIcon />,
-    title: 'Built to last',
-    description:
-      'Experience unmatched durability that goes above and beyond with lasting investment.',
-  },
-  {
-    icon: <ThumbUpAltRoundedIcon />,
-    title: 'Great user experience',
-    description:
-      'Integrate our product into your routine with an intuitive and easy-to-use interface.',
-  },
-  {
-    icon: <AutoFixHighRoundedIcon />,
-    title: 'Innovative functionality',
-    description:
-      'Stay ahead with features that set new standards, addressing your evolving needs better than the rest.',
-  },
-  {
-    icon: <SupportAgentRoundedIcon />,
-    title: 'Reliable support',
-    description:
-      'Count on our responsive customer support, offering assistance that goes beyond the purchase.',
-  },
-  {
-    icon: <QueryStatsRoundedIcon />,
-    title: 'Precision in every detail',
-    description:
-      'Enjoy a meticulously crafted product where small touches make a significant impact on your overall experience.',
-  },
+    icon: <XIcon />,
+    title: 'Twitter',
+    link: "https://twitter.com/BODENOMICS24"
+  }
 ];
 
 export default function Highlights() {
@@ -68,6 +45,7 @@ export default function Highlights() {
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
+          textAlign: 'center', // Center align the content
           gap: { xs: 3, sm: 6 },
         }}
       >
@@ -77,13 +55,8 @@ export default function Highlights() {
             textAlign: { sm: 'left', md: 'center' },
           }}
         >
-          <Typography component="h2" variant="h4">
+          <Typography component="h2" variant="h4" className="flashing">
             Socials
-          </Typography>
-          <Typography variant="body1" sx={{ color: 'grey.400' }}>
-            Explore why our product stands out: adaptability, durability,
-            user-friendly design, and innovation. Enjoy reliable customer support and
-            precision in every detail.
           </Typography>
         </Box>
         <Grid container spacing={2.5}>
@@ -105,15 +78,14 @@ export default function Highlights() {
                   boxShadow: 'none',
                 }}
               >
-                <Box sx={{ opacity: '50%' }}>{item.icon}</Box>
-                <div>
-                  <Typography fontWeight="medium" gutterBottom>
-                    {item.title}
-                  </Typography>
-                  <Typography variant="body2" sx={{ color: 'grey.400' }}>
-                    {item.description}
-                  </Typography>
-                </div>
+                <Link color="text.secondary" variant="body2" href={item.link}>
+                  <Box sx={{ opacity: '50%' }}>{item.icon}</Box>
+                  <div>
+                    <Typography fontWeight="medium" gutterBottom>
+                      {item.title}
+                    </Typography>
+                  </div>
+                </Link>
               </Stack>
             </Grid>
           ))}

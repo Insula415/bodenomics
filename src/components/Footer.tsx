@@ -59,7 +59,7 @@ export default function Footer() {
             <SitemarkIcon />
           </Box>
         </Box>
-        <Box
+        {/* <Box
           sx={{
             display: { xs: 'none', sm: 'flex' },
             flexDirection: 'column',
@@ -81,7 +81,7 @@ export default function Footer() {
           <Link color="text.secondary" variant="body2" href="#">
             Buy
           </Link>
-        </Box>
+        </Box> */}
       </Box>
       <Box
         sx={{
@@ -94,12 +94,11 @@ export default function Footer() {
         }}
       >
         <div>
-          <Link color="text.secondary" variant="body2" href="#">
+          <Typography color="text.secondary" variant="body2">
           No affiliation exists between $BODEN and Joe Biden. With no intrinsic value or anticipated financial gain, this currency is merely a meme coin.
-          </Link>
+          </Typography>
           <br />
-          <br />
-          <Link color="text.secondary" variant="body2" href="#">
+          {/* <Link color="text.secondary" variant="body2" href="#">
             Privacy Policy
           </Link>
           <Typography display="inline" sx={{ mx: 0.5, opacity: 0.5 }}>
@@ -107,8 +106,7 @@ export default function Footer() {
           </Typography>
           <Link color="text.secondary" variant="body2" href="#">
             Terms of Service
-          </Link>
-          
+          </Link> */}
           <Copyright />
         </div>
       </Box>

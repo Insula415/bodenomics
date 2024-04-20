@@ -12,9 +12,8 @@ import Drawer from '@mui/material/Drawer';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import ToggleColorMode from './ToggleColorMode';
-
 import Sitemark from './SitemarkIcon';
-
+import Link from '@mui/material/Link';
 interface AppAppBarProps {
   mode: PaletteMode;
   toggleColorMode: () => void;
@@ -90,7 +89,9 @@ export default function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                 size="small"
                 onClick={() => scrollToSection('features')}
               >
-                Dex
+                <Link color="text.secondary" variant="body2" href="https://dexscreener.com/solana/emwb2iygubq8jhlgrbmmf1ezvrvzqnl5h8tfb93bh9km">
+                  Dex
+                </Link>
               </Button>
               <Button
                 variant="text"
@@ -98,7 +99,9 @@ export default function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                 size="small"
                 onClick={() => scrollToSection('testimonials')}
               >
-                Bird
+                <Link color="text.secondary" variant="body2" href="https://birdeye.so/token/EhrS5zE4zsvDiRhw3joJkEi8MmAagHfr3udxtdxU6N9m?chain=solana">
+                  Bird
+                </Link>
               </Button>
               <Button
                 variant="text"
@@ -106,7 +109,9 @@ export default function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                 size="small"
                 onClick={() => scrollToSection('highlights')}
               >
-                Telegram
+                <Link color="text.secondary" variant="body2" href="https://t.me/+gJ8u21BL3rViOThh">
+                  Telegram
+                </Link>
               </Button>
               <Button
                 variant="text"
@@ -114,7 +119,9 @@ export default function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                 size="small"
                 onClick={() => scrollToSection('pricing')}
               >
-                Buy
+                <Link color="text.secondary" variant="body2" href="https://jup.ag/swap/USDC-SOL">
+                  Buy
+                </Link>
               </Button>
             </Box>
           </Box>
