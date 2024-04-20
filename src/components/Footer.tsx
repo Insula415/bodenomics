@@ -87,28 +87,23 @@ export default function Footer() {
         sx={{
           display: 'flex',
           justifyContent: 'space-between',
+          alignItems: 'center', 
           pt: { xs: 4, sm: 8 },
           width: '100%',
           borderTop: '1px solid',
           borderColor: 'divider',
         }}
       >
-        <div>
+        <Box>
           <Typography color="text.secondary" variant="body2">
-          No affiliation exists between $BODEN and Joe Biden. With no intrinsic value or anticipated financial gain, this currency is merely a meme coin.
+            No affiliation exists between $BODEN and Joe Biden. With no intrinsic value or anticipated financial gain, this currency is merely a meme coin.
           </Typography>
           <br />
-          {/* <Link color="text.secondary" variant="body2" href="#">
-            Privacy Policy
-          </Link>
-          <Typography display="inline" sx={{ mx: 0.5, opacity: 0.5 }}>
-            &nbsp;•&nbsp;
-          </Typography>
-          <Link color="text.secondary" variant="body2" href="#">
-            Terms of Service
-          </Link> */}
           <Copyright />
-        </div>
+        </Box>
+        <Box>
+          <img src={require('../images/flag.png')} alt={"boden"} style={{ height: "150px", width: "250px" }} />
+        </Box>
       </Box>
     </Container>
   );

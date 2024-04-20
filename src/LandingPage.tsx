@@ -16,6 +16,7 @@ import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import getLPTheme from './getLPTheme';
 import Construction from './components/Construction';
+import Meme from './components/Meme';
 // import bannerImage from '/images/banner.png';
 
 // interface ToggleCustomThemeProps {
@@ -100,6 +101,7 @@ export default function LandingPage() {
         <Highlights />
         <Divider />
         <Divider />
+        <Meme />
         {/* <FAQ /> */}
         <Divider />
         <Footer />
