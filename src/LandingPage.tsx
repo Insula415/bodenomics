@@ -103,7 +103,7 @@ export default function LandingPage() {
         <Divider />
         <Meme />
         {/* <FAQ /> */}
-        <Divider />
+        {/* <Divider /> */}
         <Footer />
       </Box>
       {/* <ToggleCustomTheme

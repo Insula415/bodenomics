@@ -81,6 +81,7 @@ export default function Hero() {
           sx={{ width: { xs: '100%', sm: '70%' } }}
         >
           <Typography
+            className="meme-text"
             variant="h1"
             sx={{
               display: 'flex',
@@ -90,7 +91,7 @@ export default function Hero() {
             }}
           >
             {'$BODENOMICS'.split('').map((letter, index) => (
-              <span key={index} style={{ color: colors[(index + currentColorIndex) % colors.length] }}>
+              <span className="meme-text" key={index} style={{ color: colors[(index + currentColorIndex) % colors.length] }}>
                 {letter}
               </span>
             ))}
@@ -99,6 +100,7 @@ export default function Hero() {
             variant="h5"
             textAlign="center"
             color="text.primary"
+            className="meme-text"
             sx={{ width: { sm: '100%', md: '80%' } }}
           >
             Vote Boden because more bad = good

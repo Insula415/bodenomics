@@ -22,7 +22,7 @@ export default function Meme() {
           flexDirection: 'column',
           alignItems: 'center',
           textAlign: 'center',
-          gap: { xs: 3, sm: 6 },
+          // gap: { xs: 3, sm: 6 },
         }}
       >
         <Grid container spacing={2} justifyContent="center" alignItems="start">
@@ -60,7 +60,7 @@ export default function Meme() {
             </div>
           </Grid>
         </Grid>
-        <img src={require('../images/vid.gif')} alt="Image 3" style={{ width: '100%', height: 'auto'}} />
+        <img src={require('../images/vid.gif')} alt="Image 3" style={{ width: '100%', height: 'auto', marginTop: "10px"}} />
         <img src={require('../images/roadmap.png')} alt="Roadmap" style={{ width: '100%', maxWidth: '600px', height: 'auto'}} />
       </Container>
     </Box>

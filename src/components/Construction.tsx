@@ -36,7 +36,7 @@ export default function Construction() {
           <Typography component="h2" variant="h4" className="meme-text" sx={{p: 2}}>
             PRESIDENTAIL ELECTION <br></br> COMING SOON 
             <br /> <br />
-            UNDER MAINTENANCE WHILST WE FIX THE MONEY PRINTER
+            UNDER MAINTENANCE WHILE WE FIX THE MONEY PRINTER
           </Typography>
         <img src={require('../images/outline.png')} alt={"boden"} style={{ height: "50px", width: "100%"}} />
         </Box>
