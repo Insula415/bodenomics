@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
 * {
   font-family: "Lato", sans-serif !important;
+  overflow-x: hidden;
 }
 
 @keyframes flash {

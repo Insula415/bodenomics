@@ -102,9 +102,10 @@ export default function Footer() {
           <Copyright />
         </Box>
         <Box>
-          <img src={require('../images/flag.png')} alt={"boden"} style={{ height: "150px", width: "250px" }} />
+          
         </Box>
       </Box>
+      <img src={require('../images/flag.png')} alt={"boden"} style={{ height: "150px", width: "250px" }} />
     </Container>
   );
 }
