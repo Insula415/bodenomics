@@ -96,7 +96,7 @@ export default function Footer() {
       >
         <Box>
           <Typography color="text.secondary" variant="body2">
-            No affiliation exists between $BODEN and Joe Biden. With no intrinsic value or anticipated financial gain, this currency is merely a meme coin.
+            No affiliation exists between $BODENOMICS and Joe Biden. With no intrinsic value or anticipated financial gain, this currency is merely a meme coin.
           </Typography>
           <br />
           <Copyright />
