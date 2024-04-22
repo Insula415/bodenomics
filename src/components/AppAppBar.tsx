@@ -48,6 +48,7 @@ export default function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
         bgcolor: 'transparent',
         backgroundImage: 'none',
         mt: 2,
+        overflow: "hidden !important"
       }}
     >
       <Container maxWidth="lg">
@@ -65,6 +66,7 @@ export default function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                 : 'hsla(220, 0%, 0%, 0.7)',
           backdropFilter: 'blur(24px)',
             maxHeight: 40,
+            overflowY: "hidden",
             border: '1px solid',
             borderColor: 'divider',
             boxShadow:
@@ -121,7 +123,7 @@ export default function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
               </Button>
             </Box>
           </Box>
-          <Box sx={{ display: { sm: 'flex', md: 'none' } }}>
+          <Box sx={{ display: { sm: 'flex', md: 'none'} }}>
             <IconButton aria-label="Menu button" onClick={toggleDrawer(true)}>
               <MenuIcon />
             </IconButton>

@@ -3,7 +3,11 @@
 * {
   font-family: "Lato", sans-serif !important;
   overflow-x: hidden;
+  /* overflow-y: hidden; */
+  box-sizing: border-box;
 }
+
+body { margin: 0 !important; }
 
 @keyframes flash {
   0% {
@@ -25,4 +29,5 @@
 
 .meme-text {
   font-family: "Finger Paint", sans-serif !important;
+  overflow: hidden;
 }

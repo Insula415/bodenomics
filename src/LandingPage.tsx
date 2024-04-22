@@ -94,14 +94,16 @@ export default function LandingPage() {
       <Box sx={{ bgcolor: 'background.default' }}>
         {/* <Features /> */}
         <Divider />
-        <Testimonials />
+
+        <Meme />
         <Divider />
         <Construction />
         <Divider />
+        <Testimonials />
+
+        <Divider />
+        <Divider />
         <Highlights />
-        <Divider />
-        <Divider />
-        <Meme />
         {/* <FAQ /> */}
         {/* <Divider /> */}
         <Footer />
