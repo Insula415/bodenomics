@@ -15,7 +15,7 @@ import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import getLPTheme from './getLPTheme';
-// import Construction from './components/Construction';
+import Construction from './components/Construction';
 import Meme from './components/Meme';
 import Voting from './components/Voting';
 // import bannerImage from '/images/banner.png';
@@ -98,8 +98,8 @@ export default function LandingPage() {
 
         <Meme />
         <Divider />
-        <Voting />
-        {/* <Construction /> */}
+        {/* <Voting /> */}
+        <Construction />
         <Divider />
         <Testimonials />
 
